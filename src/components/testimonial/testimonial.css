@@ -1,0 +1,190 @@
+/* Testimonial Container */
+.testimonial-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  font-family: "Geist", sans-serif;
+}
+
+/* Title */
+.testimonial-container h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  color: #333;
+  font-family: "Geist", sans-serif;
+}
+
+/* Avatar Section */
+.testimonial-avatar {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.avatar-background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+}
+
+.avatar-background::before,
+.avatar-background::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.avatar-background::before {
+  width: 200px; /* First (inner) circle */
+  height: 200px;
+  background: rgba(9, 120, 254, 0.15);
+}
+
+.avatar-background::after {
+  width: 260px; /* Second (outer) circle */
+  height: 260px;
+  background: rgba(9, 120, 254, 0.08);
+}
+
+.avatar-background img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Quote Section */
+.testimonial-container p {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #333;
+  padding: 0 1.5rem;
+  line-height: 1.5;
+  font-family: "Geist", sans-serif;
+}
+
+/* Author Section */
+.testimonial-container p:nth-of-type(2) {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0978fe;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-family: "Geist", sans-serif;
+}
+
+/* Navigation Dots */
+.testimonial-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.testimonial-buttons button {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.testimonial-buttons button.active {
+  background-color: #0978fe;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .testimonial-container {
+    padding: 2rem 1rem;
+  }
+
+  .testimonial-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .avatar-background {
+    width: 120px;
+    height: 120px;
+  }
+
+  .avatar-background::before {
+    width: 160px; /* Adjust for smaller screens */
+    height: 160px;
+  }
+
+  .avatar-background::after {
+    width: 200px; /* Adjust for smaller screens */
+    height: 200px;
+  }
+
+  .avatar-background img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .testimonial-container p {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-container p:nth-of-type(2) {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonial-buttons button {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .avatar-background {
+    width: 100px;
+    height: 100px;
+  }
+
+  .avatar-background::before {
+    width: 130px;
+    height: 130px;
+  }
+
+  .avatar-background::after {
+    width: 170px;
+    height: 170px;
+  }
+
+  .avatar-background img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonial-container p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  .testimonial-container p:nth-of-type(2) {
+    font-size: 0.8rem;
+  }
+}

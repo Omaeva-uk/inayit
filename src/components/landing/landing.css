@@ -1,0 +1,132 @@
+/* General Landing Section */
+.landing-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: white;
+}
+
+/* Flexbox for aligning content and image */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1400px; /* Increased for extended displays */
+  margin: 0 auto;
+  padding: 0 3.5rem;
+}
+
+/* Content (Text on the left) */
+.content {
+  max-width: 600px; /* Increased text block width for larger displays */
+  flex: 1; /* Allow content to grow proportionally */
+}
+
+.content h1 {
+  font-size: 2.5rem; /* Larger font size for extended displays */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.content h1 span {
+  color: #0978fe;
+  font-weight: bold;
+}
+
+.content p {
+  font-size: 1.1rem; /* Improved readability */
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+/* Contact Us Button */
+.contact-button {
+  background-color: #0978fe;
+  color: white;
+  border-radius: 25px;
+  padding: 0.8rem 3rem; /* Wider button for extended displays */
+  font-size: 1.1rem;
+  text-transform: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #0663cc;
+}
+
+/* Image (Right side) */
+.image {
+  flex: 1; /* Allow image to grow proportionally */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image img {
+  max-width: 550px; /* Larger image for extended displays */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    padding: 0.7rem 2rem;
+  }
+
+  .image img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Extended displays: 1600px and beyond */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+    padding: 0 3rem;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .content p {
+    font-size: 1.3rem;
+  }
+
+  .contact-button {
+    padding: 1rem 3.5rem;
+    font-size: 1.2rem;
+  }
+
+  .image img {
+    max-width: 700px;
+  }
+}

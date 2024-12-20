@@ -1,0 +1,156 @@
+/* About Us Section */
+.about-us-section {
+  padding: 4rem 2rem;
+  background-color: fff;
+}
+
+/* Container */
+.about-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+/* Video Styling */
+.about-us-video {
+  flex: 1;
+}
+
+.about-us-video-element {
+  border-radius: 25px;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Section */
+.about-us-content {
+  flex: 1;
+  max-width: 600px;
+  padding-left: 20px;
+}
+
+.about-us-content h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.about-us-content h3 {
+  font-size: 1.75rem;
+  color: #0978fe;
+  margin-bottom: 1rem;
+}
+
+.about-us-content p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+/* Contact Button */
+.about-us-contact-button {
+  background-color: #0978fe;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 2.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.about-us-contact-button:hover {
+  background-color: #0663cc;
+}
+
+/* Responsive Design */
+
+/* Large Screens: Extended Displays */
+@media (min-width: 1600px) {
+  .about-us-container {
+    max-width: 1400px;
+    gap: 4rem;
+  }
+
+  .about-us-video-element {
+    height: 500px;
+  }
+
+  .about-us-content h2 {
+    font-size: 3rem;
+  }
+
+  .about-us-content h3 {
+    font-size: 2rem;
+  }
+
+  .about-us-content p {
+    font-size: 1.25rem;
+  }
+}
+
+/* Medium Screens: Tablets and Smaller Desktops */
+@media (max-width: 1024px) {
+  .about-us-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .about-us-video-element {
+    height: 300px;
+  }
+
+  .about-us-content {
+    max-width: 100%;
+  }
+
+  .about-us-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-us-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-us-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Small Screens: Mobile Devices */
+@media (max-width: 768px) {
+  .about-us-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-us-video-element {
+    height: 200px;
+  }
+
+  .about-us-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-us-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .about-us-content p {
+    font-size: 0.95rem;
+  }
+
+  .about-us-contact-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

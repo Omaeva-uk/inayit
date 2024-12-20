@@ -1,0 +1,131 @@
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #333;
+  font-family: "Sen", sans-serif;
+  grid-column: 1 / -1;
+}
+
+.contact-form {
+  width: 100%;
+  grid-column: 1 / 2;
+}
+
+.contact-details {
+  width: 100%;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-subtitle {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+  font-family: "Sen", sans-serif;
+  width: 100%;
+  text-align: right;
+}
+
+.contact-info {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #666;
+  width: 100%;
+  text-align: right;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #666;
+  text-align: right;
+}
+
+.contact-icon {
+  margin-left: 15px;
+  font-size: 22px;
+  color: #0978fe;
+}
+
+.contact-input {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.contact-button {
+  background-color: #0978fe;
+  padding: 0.75rem 2rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .contact-form,
+  .contact-details {
+    grid-column: 1 / -1;
+  }
+
+  .contact-details {
+    align-items: flex-start;
+  }
+
+  .contact-subtitle,
+  .contact-info {
+    text-align: left;
+  }
+
+  .contact-list {
+    align-items: flex-start;
+  }
+
+  .contact-item {
+    flex-direction: row-reverse;
+  }
+
+  .contact-icon {
+    margin-right: 15px;
+    margin-left: 0;
+  }
+}

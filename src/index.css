@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Geist";
+  src: url("./app/fonts/GeistVF.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geist", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
