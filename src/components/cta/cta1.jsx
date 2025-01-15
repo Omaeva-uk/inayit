@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import emailjs from "emailjs-com";
 
-const Cta = () => {
+const Cta1 = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -68,6 +68,7 @@ const Cta = () => {
       <Box
         className="contactForm"
         sx={{
+            flex: 1,
           width: { xs: "100%", md: "48%" },
           padding: "15px",
           border: "1px solid rgba(0, 0, 0, 0.1)",
@@ -253,119 +254,21 @@ const Cta = () => {
         )}
       </Box>
 
-      <Box
-        className="contact-details"
-        sx={{
-          width: { xs: "100%", md: "48%" },
-          padding: "15px",
-          textAlign: "right",
-        }}
-      >
-        <Typography
-          variant="h4"
-          component="h2"
-          sx={{
-            marginBottom: "2rem",
-            fontWeight: "normal",
-            fontSize: "2rem",
-            fontFamily: "'Sen', sans-serif",
-            textAlign: "center",
-          }}
-        >
-          Contact us
-        </Typography>
-        <ul style={{ listStyle: "none", padding: "0" }}>
-          <li
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "flex-start",
-              marginBottom: "15px",
-              fontSize: "14px",
-              color: "#333",
-            }}
-          >
-            <FaMapMarkerAlt
-              style={{
-                marginLeft: "20",
-                marginRight: "40",
-                fontSize: "22px",
-                color: "#0978fe",
-                width:"50px",
-              }}
-            />
-            <span style={{textAlign: "left"}}>
-              340 Winterthur Way, Basingstoke, Hampshire, RG21 7UQ, United
-              Kingdom
-            </span>
-          </li>
-          <li
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "flex-start",
-              marginBottom: "15px",
-              fontSize: "14px",
-              color: "#333",
-            }}
-          >
-            <FaPhoneAlt
-              style={{
-                marginLeft: "15px",
-                marginRight: "20px",
-                fontSize: "22px",
-                color: "#0978fe",
-                width:"30px",
-              }}
-            />
-            <span>+44-75860 31157</span>
-          </li>
-          <li
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "flex-start",
-              marginBottom: "15px",
-              fontSize: "14px",
-              color: "#333",
-            }}
-          >
-            <FaEnvelope
-              style={{
-                marginLeft: "15px",
-                marginRight: "20px",
-                fontSize: "22px",
-                color: "#0978fe",
-                width:"30px",
-              }}
-            />
-            <span>info@inayit.com</span>
-          </li>
-          <li
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "flex-start",
-              marginBottom: "15px",
-              fontSize: "14px",
-              color: "#333",
-            }}
-          >
-            <FaGlobe
-              style={{
-                marginLeft: "15px",
-                marginRight: "20px",
-                fontSize: "22px",
-                color: "#0978fe",
-                width:"30px",
-              }}
-            />
-            <span>www.Inayit.com</span>
-          </li>
-        </ul>
-      </Box>
+     <div className="flex-1 flex flex-col gap-5 justify-between my-5 p-5">
+        <h2 className="text-2xl md:text-3xl text-gray-800">Contact us</h2>
+        <div>
+            <ul className="space-y-3 font-Exo">
+                <li className="flex items-center gap-5"><i className="fa-solid w-[30px] text-primary text-2xl md:text-3xl fa-envelope"></i><p className="text-sm md:text-md">info@inayit.com</p></li>
+                <li className="flex items-center gap-5"><i className="fa-solid w-[30px] text-primary text-3xl md:text-3xl fa-phone"></i><p className="text-sm md:text-md ">+44-75860 31157</p></li>
+                <li className="flex items-center gap-5"><i className="fa-solid w-[30px] text-primary text-3xl md:text-3xl fa-location-dot"></i><p className="text-sm md:text-md max-w-sm ">340 Winterthur Way, Basingstoke, Hampshire, RG21 7UQ, United Kingdom</p></li>
+            </ul>
+        </div>
+        <div className="h-[250px] md:h-[320px] rounded-3xl overflow-hidden">
+            <video src="/abt.mp4" className="w-full h-full object-cover" autoPlay muted loop></video>
+        </div>
+     </div>
     </Box>
   );
 };
 
-export default Cta;
+export default Cta1;

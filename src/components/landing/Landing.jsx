@@ -1,5 +1,6 @@
 import React from "react";
 import "./landing.css";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function LandingSection() {
   return (
@@ -16,7 +17,7 @@ export default function LandingSection() {
             Our scalable solutions grow with your business, ensuring optimal
             performance and long-term success.
           </p>
-          <button className="contact-button">Contact us</button>
+          <Link to="/#contact-us" ><button className="contact-button">Contact us</button> </Link>
         </div>
 
         {/* Image Section */}

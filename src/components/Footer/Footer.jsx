@@ -8,13 +8,13 @@ const Footer = () => {
     <footer className="footer-container">
       {/* Navigation Links */}
       <Box className="footer-navigation">
-        <Link href="#" className="footer-link">
+        <Link href="/" className="footer-link">
           Home
         </Link>
-        <Link href="#about" className="footer-link">
+        <Link href="/#about" className="footer-link">
           About Us
         </Link>
-        <Link href="#services" className="footer-link">
+        <Link href="/#services" className="footer-link">
           Services
         </Link>
       </Box>
@@ -22,7 +22,7 @@ const Footer = () => {
       {/* Social Icons */}
       <Box className="footer-icons">
         <Link
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/company/104631706/admin/page-posts/published/"
           target="_blank"
           className="footer-icon-link"
         >
@@ -36,16 +36,19 @@ const Footer = () => {
       {/* Copyright Section */}
       <Typography variant="body2" className="footer-copyright">
         © 2024 All Rights Reserved | Designed and Developed by{" "}
-        <Link href="#" className="footer-highlight">
+        <Link href="https://www.omaeva.com/" target="_blank" className="footer-highlight !underline">
           Omaeva LTD, UK
         </Link>{" "}
         |{" "}
-        <Link href="#privacy" className="footer-highlight">
+        <Link href="/privacy-policy" className="footer-highlight">
           Privacy Policy & Cookies
         </Link>
       </Typography>
 
       {/* Wave Animation */}
+
+      <div className=" lg:h-[250px] w-full">
+      
       <svg viewBox="0 0 120 28" className="footer-wave">
         <defs>
           <mask id="xxx">
@@ -82,6 +85,7 @@ const Footer = () => {
           <use id="wave1" className="wave" xlinkHref="#wave" x="0" y="1" />
         </g>
       </svg>
+      </div>
     </footer>
   );
 };

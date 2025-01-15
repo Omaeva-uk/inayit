@@ -14,9 +14,12 @@ export default function NavBar() {
   return (
     <nav className="navbar">
       {/* Logo Container */}
-      <div className="navbar__logo-container">
-        <img src="/fav.png" alt="Logo" className="navbar__logo-img" />
-      </div>
+      <Link to="/" >
+        <div className="navbar__logo-container">
+          <img src="/fav.png" alt="Logo" className="navbar__logo-img" />
+        </div>
+      
+      </Link>
 
       {/* Hamburger Menu */}
       <div className="navbar__hamburger" onClick={toggleMenu}>
@@ -25,19 +28,24 @@ export default function NavBar() {
 
       {/* Navigation Links */}
       <div className={`navbar__links ${isMenuOpen ? "active" : ""}`}>
-        <Link smooth to="#home" className="navbar__link">
+        <Link smooth to="/#home" className="navbar__link">
           Home
         </Link>
-        <Link smooth to="#about" className="navbar__link">
+        <Link smooth to="/#about" className="navbar__link">
           About us
         </Link>
-        <Link smooth to="#services" className="navbar__link">
+        <Link smooth to="/#services" className="navbar__link">
           Services
+        </Link>
+        <Link smooth to="/blog" className="navbar__link">
+          Blogs
         </Link>
       </div>
 
       {/* Contact Button */}
-      <Button
+      <div className="navbar__contact-button">
+        <Link to="#contact-us">
+        <Button
         variant="contained"
         disableElevation
         sx={{
@@ -54,6 +62,10 @@ export default function NavBar() {
       >
         Contact Us
       </Button>
+        </Link>
+      
+      </div>
+      
     </nav>
   );
 }

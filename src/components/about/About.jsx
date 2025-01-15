@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import "./about.css";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function AboutUs() {
   return (
-    <section className="about-us-section">
+    <section id="about" className="about-us-section">
       <div className="about-us-container">
         {/* Image Section */}
         <div className="about-us-video">
@@ -39,7 +40,10 @@ export default function AboutUs() {
             are expanding into the UK market, bringing innovative solutions and
             our extensive experience to address the diverse needs of businesses.
           </p>
-          <button className="about-us-contact-button">Contact Us</button>
+          <Link to="/#contact-us">
+            <button className="about-us-contact-button">Contact Us</button>
+          </Link>
+          
         </div>
       </div>
     </section>

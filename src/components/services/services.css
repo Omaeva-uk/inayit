@@ -17,8 +17,8 @@
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  max-width: 1000px;
+  gap: 4rem;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -32,7 +32,11 @@
 @media (max-width: 480px) {
   .card-container {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 3rem;
+  }
+
+  .services-section{
+    padding: 4rem 1rem;
   }
 }
 

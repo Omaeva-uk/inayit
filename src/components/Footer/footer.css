@@ -8,7 +8,7 @@
   max-width: 100%;
   bottom: -20px;
   overflow: hidden;
-  margin-left: -20px;
+  /* margin-left: -20px; */
 }
 
 .footer-navigation {
@@ -21,7 +21,7 @@
 }
 
 .footer-link {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #0978fe;
   font-size: clamp(0.875rem, 1vw, 1rem);
   font-weight: bold;
@@ -62,7 +62,7 @@
 }
 
 .footer-highlight {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #0978fe;
   font-weight: bold;
 }
@@ -170,9 +170,9 @@ svg {
 
 /* Media Queries for different screen sizes */
 @media screen and (max-width: 768px) {
-  .footer-container {
+  /* .footer-container {
     padding: 1.5rem 0.5rem;
-  }
+  } */
 
   .footer-navigation {
     gap: 1rem;
