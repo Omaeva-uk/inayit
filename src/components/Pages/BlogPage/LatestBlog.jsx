@@ -28,9 +28,9 @@ const LatestBlog = () => {
         <div className='grid gap-7 mt-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-14'>
           {
             latestBlog.slice(startingPoint,endingPoint).map((item, i) => (
-              <Link to={`/blog/latest-blog/${item.id}`} key={item.id} onMouseEnter={() => setHovered(i)} onMouseLeave={() => setHovered(null)}>
+              <Link to={`/blog/latest-blog/${item.id}`} key={item.id} className="flex flex-col" onMouseEnter={() => setHovered(i)} onMouseLeave={() => setHovered(null)}>
                 <div className="overflow-hidden rounded-3xl">
-                  <img src={item?.img} className={`${hovered === i &&  'scale-105 transition-all'}`} alt="blog image" />
+                  <img src={item?.img} className={`${hovered === i &&  'scale-105 transition-all'} w-full object-cover object-center`} alt="blog image" />
                 </div>
                 <div>
                   <div className="flex justify-between items-center mt-3">
@@ -40,7 +40,7 @@ const LatestBlog = () => {
                     <h3 className="text-xl mt-5 line-clamp-2 font-medium mb-2">{item.title}</h3>
                     <p className="text-sm mb-5 line-clamp-3 text-gray-700">{item.content}</p>
                   </div>
-                  <Link to={`/blog/latest-blog/${item.id}`} ><button className={`${hovered === i && 'bg-primary transition-all text-white'} border border-primary  text-primary py-2 px-3 rounded-3xl flex justify-between items-center gap-3 `}>Read More</button></Link> 
+                  <Link to={`/blog/latest-blog/${item.id}`} className="mt-auto" ><button className={`${hovered === i && 'bg-primary transition-all text-white'} border border-primary  text-primary py-2 px-3 rounded-3xl flex justify-between items-center gap-3 `}>Read More</button></Link> 
               </Link>
             ))
           }

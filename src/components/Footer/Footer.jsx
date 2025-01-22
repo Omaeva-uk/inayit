@@ -35,7 +35,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <Typography variant="body2" className="footer-copyright">
-        © 2024 All Rights Reserved | Designed and Developed by{" "}
+        © {new Date().getFullYear()} All Rights Reserved | Designed and Developed by{" "}
         <Link href="https://www.omaeva.com/" target="_blank" className="footer-highlight !underline">
           Omaeva LTD, UK
         </Link>{" "}

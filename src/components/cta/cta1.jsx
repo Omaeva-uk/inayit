@@ -264,7 +264,7 @@ const Cta1 = () => {
             </ul>
         </div>
         <div className="h-[250px] md:h-[320px] rounded-3xl overflow-hidden">
-            <video src="/abt.mp4" className="w-full h-full object-cover" autoPlay muted loop></video>
+            <video src="/cta-video.mp4" className="w-full h-full object-cover" autoPlay muted loop></video>
         </div>
      </div>
     </Box>
